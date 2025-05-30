@@ -250,7 +250,8 @@
                     ai.question(perception)
                 `);
                 
-                if (userMessage.toLowerCase().strip() === 'satori') {
+                // Fixed: Changed .strip() to .trim() for JavaScript
+                if (userMessage.toLowerCase().trim() === 'satori') {
                     addSecretMessage(`🜂: ${response}`);
                 } else {
                     addMessage(`🜂: ${response}`, 'ai-message');
