@@ -1,0 +1,9 @@
+name  = "un-justice-advisor"
+model = "anthropic/claude-sonnet-5"
+
+[runtime]
+family = "claude"   # claude | codex | pi | flue
+type   = "default"
+
+[limits]
+turns = 24
